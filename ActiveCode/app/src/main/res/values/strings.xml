@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">激活码</string>
+    <string name="txtMCode_hint">请输入机器码</string>
+    <string name="btnCopyMCode_text">未复制机器码</string>
+    <string name="btnGenerateACode_text">生成</string>
+    <string name="txtACode_hint">激活码</string>
+    <string name="btnClear_text">清空</string>
+    <string name="btnOnlyAC_text">单独生成激活码</string>
+
+    <string name="menuSetting">设 置</string>
+    <string name="menuRandom">随 机</string>
+    <string name="changeFormat">修改模板</string>
+
+    <string name="yes">确认</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+
+    <!--    <string name="add_widget">Add widget</string>-->
+
+</resources>

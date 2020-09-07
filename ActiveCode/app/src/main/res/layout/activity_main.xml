@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@mipmap/bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/txtMCode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:maxLines="1"
+            android:hint="@string/txtMCode_hint"
+            android:textColor="@color/colorText"
+            android:background="@drawable/edittext_shape"
+            android:digits="0123456789ABCDEFabcdef"/>
+
+        <Button
+            android:id="@+id/btnGenerateACode"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/btnGenerateACode_text"
+            android:onClick="on_btnGenerateACode_clicked"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/txtACode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:padding="5dp"
+        android:gravity="top"
+        android:lines="11"
+        android:editable="false"
+        android:textSize="20sp"
+        android:textColor="@color/colorText"
+        android:textColorHint="@color/colorTextHint"
+        android:hint="@string/txtACode_hint"/>
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnClear_text"
+        android:onClick="on_btnClear_clicked"/>
+
+    <Button
+        android:id="@+id/btnOnlyAC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnOnlyAC_text"
+        android:onClick="on_btnOnlyAC_clicked"/>
+
+    <TextView
+        android:id="@+id/lblStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textColor="@color/colorText"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/lblErrLog"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:textColor="@color/colorText"/>
+
+
+</LinearLayout>
