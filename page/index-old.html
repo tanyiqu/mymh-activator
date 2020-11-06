@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>激活码生成</title>
+    <link rel="short icon" href="imgs/icon.png">
+
+    <link rel="stylesheet" href="css/index.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
+    <script src="js/active.js"></script>
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+    <!-- 顶部菜单 -->
+    <header>
+        <p class="title">激活码</p>
+        <p class="random">7</p>
+        <p class="random">D</p>
+    </header>
+
+    <div class="input-area">
+        <input id="mcode" class="input" type="text">
+        <button id="generate" class="btn">生成</button>
+    </div>
+
+    <div class="console">
+        <p id="console">激活码</p>
+        <input id="foo" class="foo" type="text" value="">
+    </div>
+
+
+    <div class="btns">
+        <button id="clear">清空</button>
+        <button id="generateOnly">单独生成激活码</button>
+        <button id="copy" class="btn" data-clipboard-target="#console">复制</button>
+    </div>
+
+</body>
+
+</html>
