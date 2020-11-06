@@ -20,8 +20,24 @@ $(function() {
 
 
 function loadEvents() {
-    // 单独生成激活码
+    // 生成激活码
     $('#generate').click((e) => {
+        let txt = $('#mcode').val();
+        let acode = active(txt);
+
+        let msg = message.replace('XX', acode);
+
+        console.log(msg);
+
+        $('#console').text(msg);
+        $('#foo').val(msg);
+
+        // 设置剪贴板内容
+        $("#copy").trigger("click");
+    });
+
+    // 单独生成激活码
+    $('#generateOnly').click((e) => {
         let txt = $('#mcode').val();
         let acode = active(txt);
 
@@ -41,7 +57,7 @@ function loadEvents() {
 
 
     $('#copy').click(() => {
-        console.log('copy');
+
     });
 
 }
