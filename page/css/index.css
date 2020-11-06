@@ -20,6 +20,9 @@ body {
   -ms-user-select: none;
   user-select: none;
 }
+button {
+  font-size: 16px;
+}
 header {
   position: relative;
   width: 100%;
@@ -74,10 +77,11 @@ header .random {
   outline: none;
 }
 .btns {
+  height: calc(3 * 48px);
   display: flex;
   flex-direction: column;
 }
 .btns button {
-  height: 48px;
+  flex: 1;
   margin: 2px;
 }
