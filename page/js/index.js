@@ -15,7 +15,7 @@ http://bilibili.com/video/av49413063
 $(function() {
 
     // new ClipboardJS('#copy');
-    loadEvents();
+    // loadEvents();
 });
 
 
