@@ -13,7 +13,7 @@ http://bilibili.com/video/av49413063
 
 // 入口
 $(function() {
-    // new ClipboardJS('#copy');
+    new ClipboardJS('#copy');
     loadEvents();
 });
 
@@ -45,6 +45,7 @@ function loadEvents() {
 
         $('#console').text(acode);
         $('#foo').val(acode);
+
         // 设置剪贴板内容
         $("#copy").trigger("click");
     });
