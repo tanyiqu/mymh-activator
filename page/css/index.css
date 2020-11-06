@@ -12,6 +12,14 @@ body {
   background: url(../imgs/bg.jpg);
   background-size: cover;
 }
+.cnt-select {
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 header {
   position: relative;
   width: 100%;
@@ -27,8 +35,49 @@ header .title {
 }
 header .random {
   float: right;
-  margin-right: 20px;
+  margin-right: 30px;
   line-height: 55px;
-  font-size: 22px;
+  font-size: 18px;
   color: #fff;
+}
+.input-area {
+  width: 100%;
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+}
+.input-area .input {
+  height: 100%;
+  width: 79.6%;
+  padding-left: 6px;
+  font-size: 18px;
+  background: rgba(255, 255, 255, 0.7);
+}
+.input-area .btn {
+  height: 100%;
+  width: 20%;
+}
+.console {
+  width: 100%;
+  height: 45%;
+  z-index: 1;
+}
+.console p {
+  padding: 2px;
+  font-size: 18px;
+  color: #fff;
+}
+.console .foo {
+  width: 1px;
+  margin-left: -10px;
+  border: none;
+  outline: none;
+}
+.btns {
+  display: flex;
+  flex-direction: column;
+}
+.btns button {
+  height: 48px;
+  margin: 2px;
 }
