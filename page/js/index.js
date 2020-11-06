@@ -13,9 +13,8 @@ http://bilibili.com/video/av49413063
 
 // 入口
 $(function() {
-
     // new ClipboardJS('#copy');
-    // loadEvents();
+    loadEvents();
 });
 
 
@@ -28,6 +27,8 @@ function loadEvents() {
 
         let msg = message.replace('XX', acode);
 
+        console.log(msg);
+
         $('#console').text(msg);
         $('#foo').val(msg);
 
@@ -39,10 +40,18 @@ function loadEvents() {
     $('#generateOnly').click((e) => {
         let txt = $('#mcode').val();
         let acode = active(txt);
+
+        console.log(acode);
+
         $('#console').text(acode);
         $('#foo').val(acode);
         // 设置剪贴板内容
         $("#copy").trigger("click");
+    });
+
+    // 清空
+    $('#clear').click(() => {
+        $('#console').text('激活码');
     });
 
 
